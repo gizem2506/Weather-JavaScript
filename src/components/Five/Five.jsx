@@ -70,7 +70,7 @@ const Five = ({ forecast }) => {
         {forecastData.map((entry, index) => (
           <g
             key={index}
-            transform={`translate(${index * (isMobile ? 50 : 70)}, 0)`}
+            transform={`translate(${index * (isMobile ? 50 : 70) + 10}, 0)`}
           >
             <text
               y={entry.temperature - 1}
@@ -86,10 +86,22 @@ const Five = ({ forecast }) => {
               height={60}
               width={20}
             />
-            <text y={90} textAnchor="middle" fill="#F0F0F0" fontSize={10}>
+            <text
+              y={90}
+              textAnchor="middle"
+              fill="#F0F0F0"
+              fontSize={10}
+              transform={`translate(${index * (isMobile ? 1 : 1) + 10}, 0)`}
+            >
               {entry.time}
             </text>
-            <text y={100} textAnchor="middle" fill="#F0F0F0" fontSize={10}>
+            <text
+              y={100}
+              textAnchor="middle"
+              fill="#F0F0F0"
+              fontSize={10}
+              transform={`translate(${index * (isMobile ? 1 : 1) + 10}, 0)`}
+            >
               {entry.windSpeed}
             </text>
           </g>

@@ -10,6 +10,33 @@
   padding: 20px;
   justify-content: space-between;
 }
+.sunny-rainy-animation {
+  animation: sunnyRainyAnimation 2s ease infinite;
+}
+
+@keyframes sunnyRainyAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.thunderAnimation {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(8deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .there-container .text,
 .there-container .p {

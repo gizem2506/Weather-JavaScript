@@ -1,3 +1,5 @@
+// There.js
+
 import React, { useState } from "react";
 import Image1 from "../../assets/svg/Image1.svg";
 import Image2 from "../../assets/svg/Image2.svg";
@@ -61,8 +63,26 @@ const There = ({ weeklyWeather }) => {
             <div className="mobile-container">
               <p className="text">{day.toUpperCase()}</p>
               <img
-                className="img"
-                alt="There "
+                className={`img ${
+                  currentData[day].type === "sunny" ? "thunderAnimation" : ""
+                } ${
+                  currentData[day].type === "sunny rainy"
+                    ? "sunny-rainy-animation"
+                    : ""
+                } ${
+                  currentData[day].type === "sunny cloudy"
+                    ? "sunny-rainy-animation"
+                    : ""
+                }${
+                  currentData[day].type === "thunder"
+                    ? "sunny-rainy-animation"
+                    : ""
+                }${
+                  currentData[day].type === "rainy"
+                    ? "sunny-rainy-animation"
+                    : ""
+                }`}
+                alt="There"
                 src={imageUrl(currentData[day].type)}
               />
               <p className="p">{`${currentData[day].degree}°`}</p>
