@@ -1,0 +1,111 @@
+.four-container {
+  background-color: #c4c3c166;
+  border-radius: 27px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.four-container .date {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.four-container .clock {
+  width: 59px;
+  margin-right: 56px;
+  height: 59px;
+}
+.four-container .date-content {
+  display: flex;
+  align-items: center;
+}
+.four-container .text-two {
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.four-container .real-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.four-container .real-text {
+  margin-left: 16px;
+  color: #fff;
+  font-family: Inter;
+  margin-right: 40px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.four-container .real-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.four-container .img {
+  width: 55px;
+  height: 65px;
+  flex-shrink: 0;
+}
+.four-container .div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .date {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .div {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .clock {
+    width: 59px;
+    height: 59px;
+  }
+  .date-content {
+    display: flex;
+    align-items: center;
+  }
+  .text-two {
+    color: #fff;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .real-content {
+    display: flex;
+  }
+  .real-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .img {
+    width: 55px;
+    height: 65px;
+    flex-shrink: 0;
+  }
+}
