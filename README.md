@@ -7,7 +7,7 @@
 
 - This weather website is developed using React.js (without Next.js). The project was written in JavaScript and CSS was used for user interface design. Weather data is retrieved from a data source in JSON format.
 - I published the projects in Vercel, I am sharing the links, you can view them from there.
-  https://smart-maple-js-git-main-gizems-projects.vercel.app/
+- https://smart-maple-js.vercel.app/
 
 ## Getting Started
 

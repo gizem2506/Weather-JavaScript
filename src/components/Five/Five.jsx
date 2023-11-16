@@ -56,7 +56,7 @@ const Five = ({ forecast }) => {
     }
   };
 
-  const chartWidth = isMobile ? 312 : 420;
+  const chartWidth = isMobile ? 300 : 420;
 
   return (
     <div className="five-content" style={{ padding: 20 }}>
