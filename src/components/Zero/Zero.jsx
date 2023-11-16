@@ -38,7 +38,7 @@ const Zero = ({ date, city, type, degree }) => {
       audio.pause();
       audio.currentTime = 0;
     };
-  }, []); // Dependency array is empty, meaning it runs once on mount
+  }, []);
 
   return (
     <div className="zero-container">

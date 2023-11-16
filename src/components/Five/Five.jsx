@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { LineChart, Line } from "recharts";
-import "../Five/Five.css";
 import Sunny from "../../assets/svg/One.svg";
 import Star from "../../assets/svg/Two.svg";
 import Thunder from "../../assets/svg/There.svg";
 import Cloudly from "../../assets/svg/Four.svg";
+import "../Five/Five.css";
 
 const Five = ({ forecast }) => {
   const [forecastData, setForecastData] = useState([
