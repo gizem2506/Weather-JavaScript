@@ -10,19 +10,21 @@ const Four = ({ airCondition }) => {
   const [realFeel, rainChance, windSpeed, uvIndex] = airCondition.split("::");
 
   return (
-    <div className="div">
-      <div className="date-content">
-        <img className="clock" alt="Clock" src={ClockIcon} />
-        <p className="date">8:00 PM GMT</p>
-      </div>
-      <p className="text-two">AIR CONDITIONS</p>
-      <div className="real-container">
-        {renderWeatherItem(Real, "Real Feel", `${realFeel}°`)}
-        {renderWeatherItem(Wind, "Wind", `${windSpeed} km/hr`)}
-      </div>
-      <div className="real-container">
-        {renderWeatherItem(Rain, "Change of Rain", `${rainChance}%`)}
-        {renderWeatherItem(UV, "UV Index", `${uvIndex}`)}
+    <div className="div ">
+      <div className="left ">
+        <div className="date-content">
+          <img className="clock" alt="Clock" src={ClockIcon} />
+          <p className="date">8:00 PM GMT</p>
+        </div>
+        <p className="text-two">AIR CONDITIONS</p>
+        <div className="real-container">
+          {renderWeatherItem(Real, "Real Feel", `${realFeel}°`)}
+          {renderWeatherItem(Wind, "Wind", `${windSpeed} km/hr`)}
+        </div>
+        <div className="real-container">
+          {renderWeatherItem(Rain, "Change of Rain", `${rainChance}%`)}
+          {renderWeatherItem(UV, "UV Index", `${uvIndex}`)}
+        </div>{" "}
       </div>
     </div>
   );

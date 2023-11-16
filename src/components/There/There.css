@@ -10,6 +10,7 @@
   padding: 20px;
   justify-content: space-between;
 }
+
 .there-container .text,
 .there-container .p {
   color: #fff;
@@ -26,12 +27,26 @@
   font-style: normal;
   font-weight: 400;
 }
+.there-container .mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .there-container .p {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
 }
+
+.there-container .day-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
 .weather-background {
   background: url("../../assets/img/background.jpeg") lightgray 50% / cover
       no-repeat,
@@ -42,15 +57,22 @@
   .there-container .div-day {
     flex-direction: column;
   }
-
+  .there-container .div {
+    display: flex;
+    flex-direction: column;
+  }
   .there-container .mobile-container {
     margin-bottom: 20px;
   }
   .there-container .mobile-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+  }
+  .there-container .day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: initial;
   }
 }

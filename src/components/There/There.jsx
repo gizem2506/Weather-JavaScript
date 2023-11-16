@@ -43,43 +43,41 @@ const There = ({ weeklyWeather }) => {
 
   return (
     <div className="div-day">
-      {Object.keys(currentData).map((day) => (
-        <div
-          key={day}
-          className={`div ${currentData[day].type} ${
-            currentData[day].type === "sunny" ? "weather-background" : ""
-          }`}
-        >
-          <div className="mobile-container">
-            <p className="text">{day.toUpperCase()}</p>
-            <img
-              className="img"
-              alt="There "
-              src={imageUrl(currentData[day].type)}
-            />
-            <p className="p">{`${currentData[day].degree}°`}</p>
+      <div className="day-container">
+        <div>
+          <img
+            alt="Left Icon"
+            src={Left}
+            onClick={() => handleNavigation("previous")}
+          />
+        </div>{" "}
+        {Object.keys(currentData).map((day) => (
+          <div
+            key={day}
+            className={`div ${currentData[day].type} ${
+              currentData[day].type === "sunny" ? "weather-background" : ""
+            }`}
+          >
+            <div className="mobile-container">
+              <p className="text">{day.toUpperCase()}</p>
+              <img
+                className="img"
+                alt="There "
+                src={imageUrl(currentData[day].type)}
+              />
+              <p className="p">{`${currentData[day].degree}°`}</p>
+            </div>
           </div>
-        </div>
-      ))}
-      {/* <div
-        style={{
-          flex: 0.1,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
+        ))}
         <div>
-          <button onClick={() => handleNavigation("previous")}>
-            <img className="" alt="Left Icon" src={Left} />
-          </button>
+          <img
+            className="icon-img"
+            alt="Right Icon"
+            src={Right}
+            onClick={() => handleNavigation("next")}
+          />
         </div>
-        <div>
-          <button onClick={() => handleNavigation("next")}>
-            <img className="" alt="Right Icon" src={Right} />
-          </button>
-        </div>
-      </div> */}
+      </div>
     </div>
   );
 };

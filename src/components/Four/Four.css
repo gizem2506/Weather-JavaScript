@@ -26,6 +26,11 @@
   display: flex;
   align-items: center;
 }
+.four-container .left {
+  margin-right: 29px;
+  margin-left: 29px;
+}
+
 .four-container .text-two {
   color: #fff;
   font-family: Inter;
@@ -38,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .four-container .real-text {
@@ -58,15 +63,18 @@
 }
 
 .four-container .img {
-  width: 50px;
-  height: 60px;
+  width: 45px;
+  height: 50px;
   flex-shrink: 0;
 }
 .four-container .div {
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 100vh;
+  background-image: url("../../assets/svg/fourbg.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-/* Media Query for Mobile */
+
 @media (max-width: 768px) {
   .date {
     color: #fff;
@@ -77,9 +85,9 @@
     font-weight: 500;
     line-height: normal;
   }
-  .div {
-    margin-left: 20px;
-    margin-right: 20px;
+  .four-container .left {
+    margin-right: 29px;
+    margin-left: 29px;
   }
   .clock {
     width: 59px;

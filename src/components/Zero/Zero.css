@@ -102,13 +102,30 @@
     color: #fff;
     font-family: Inter;
     font-size: 26px;
+
     font-style: normal;
     font-weight: 500;
     margin-left: 0px;
     line-height: normal;
   }
   .zero-content {
-    gap: 20px;
+    gap: 10px;
+    margin-left: 60px;
+
     padding-top: 0px;
+  }
+  .zero-content-two {
+    display: flex;
+    flex-direction: row;
+  }
+  .zero-temperature {
+    height: auto;
+    color: #fff;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 20px;
+    line-height: normal;
   }
 }

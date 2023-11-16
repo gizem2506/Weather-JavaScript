@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { LineChart, Line } from "recharts";
 import "../Five/Five.css";
-import Sunny from "../../assets/svg/sunnycloudy.svg";
-import Star from "../../assets/svg/star.svg";
-import Thunder from "../../assets/svg/thundercloudy.svg";
-import Cloudly from "../../assets/svg/cloudystar.svg";
+import Sunny from "../../assets/svg/One.svg";
+import Star from "../../assets/svg/Two.svg";
+import Thunder from "../../assets/svg/There.svg";
+import Cloudly from "../../assets/svg/Four.svg";
 
 const Five = ({ forecast }) => {
   const [forecastData, setForecastData] = useState([
@@ -24,10 +24,12 @@ const Five = ({ forecast }) => {
         "15km/h",
       ];
 
+      const weatherTypes = ["one", "two", "there", "four", "five", "six"];
+
       const transformedData = Object.keys(forecast).map((time, index) => ({
         time: time,
         temperature: forecast[time],
-        weatherType: "sunny",
+        weatherType: weatherTypes[index],
         windSpeed: manuallyAddedWindSpeeds[index],
       }));
 
@@ -37,16 +39,20 @@ const Five = ({ forecast }) => {
 
   const getWeatherIcon = (weatherType) => {
     switch (weatherType) {
-      case "sunny":
+      case "one":
+        return Sunny;
+      case "two":
         return Star;
-      case "star":
-        return Star;
-      case "thunder":
+      case "there":
         return Thunder;
-      case "cloudy":
+      case "four":
+        return Cloudly;
+      case "five":
+        return Thunder;
+      case "six":
         return Cloudly;
       default:
-        return Sunny;
+        return null;
     }
   };
 
