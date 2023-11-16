@@ -44,7 +44,7 @@
   margin-left: 16px;
   color: #fff;
   font-family: Inter;
-  margin-right: 40px;
+  margin-right: 20px;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -57,8 +57,8 @@
 }
 
 .four-container .img {
-  width: 55px;
-  height: 65px;
+  width: 50px;
+  height: 60px;
   flex-shrink: 0;
 }
 .four-container .div {
