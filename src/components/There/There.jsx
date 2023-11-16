@@ -61,7 +61,7 @@ const There = ({ weeklyWeather }) => {
           </div>
         </div>
       ))}
-      <div
+      {/* <div
         style={{
           flex: 0.1,
           display: "flex",
@@ -79,7 +79,7 @@ const There = ({ weeklyWeather }) => {
             <img className="" alt="Right Icon" src={Right} />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

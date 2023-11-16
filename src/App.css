@@ -43,7 +43,7 @@
   justify-content: center;
   background-color: #c4c3c166;
   border-radius: 27px;
-  margin-right: 28px;
+  margin-right: 20px;
 }
 
 .main-content {
@@ -78,7 +78,7 @@
   background-color: #c4c3c166;
   border-radius: 27px;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .four-container {
