@@ -7,6 +7,9 @@ const Five = ({ forecast }) => {
     { time: "", temperature: "" },
   ]);
 
+  // Determine if the screen width is considered as mobile
+  const isMobile = window.innerWidth <= 768;
+
   useEffect(() => {
     if (forecast) {
       const transformedData = Object.keys(forecast).map((time) => ({
@@ -19,7 +22,7 @@ const Five = ({ forecast }) => {
 
   return (
     <div className="five-content">
-      <LineChart width={450} height={200} data={forecastData}>
+      <LineChart width={isMobile ? 360 : 450} height={200} data={forecastData}>
         <Line
           type="monotone"
           dataKey="temperature"
@@ -29,7 +32,7 @@ const Five = ({ forecast }) => {
         {forecastData.map((entry, index) => (
           <text
             key={index}
-            x={index * 70}
+            x={index * (isMobile ? 50 : 70)}
             y={entry.temperature - 1}
             textAnchor="middle"
             fill="#F0F0F0"

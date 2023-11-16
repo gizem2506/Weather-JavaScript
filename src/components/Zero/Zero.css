@@ -93,3 +93,22 @@
   margin-left: 100px;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  .zero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .zero-weather-text {
+    color: #fff;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 0px;
+    line-height: normal;
+  }
+  .zero-content {
+    gap: 20px;
+    padding-top: 0px;
+  }
+}
