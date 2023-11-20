@@ -1,7 +1,3 @@
-## İmportant Note
-
-- Sound has been added to the background of the project. It will start when you touch any point on the page. I wanted to give information so that the sound does not disturb you.
-- I made two, I tried to use different technologies in both. I sent both projects.
 
 ## Weather App
 
